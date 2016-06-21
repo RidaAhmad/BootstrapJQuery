@@ -1,0 +1,64 @@
+
+/*
+$('#checki').append("<p></p>").text("Rida");
+$('#product_show').append("<%= escape_javascript (render: 'show', locals: { product: @product }) %>");
+$('#product_content').val('')
+$("#checking").hover(function(){
+    $("p").hide(1000);
+});
+*/
+
+/*
+alert("end!");
+alert("asdfads");
+$('#mydiv').append("<p></p>").text("Rida");
+// $('#checki').append("<p>Rida</p>");
+/*
+$('#product_show').append("<%= escape_javascript (render: 'show', locals: { product: @product }) %>");
+$('#product_content').val('')
+$("#checking").hover(function(){
+    $("p").hide(1000);
+});
+$(document).ready(function(){$("body").append("<div id='run'>Rida</div>");});
+
+/*
+alert("end!");
+alert("asdfads");
+$('#mydiv').append("<p></p>").text("Rida");
+// $('#checki').append("<p>Rida</p>");
+/*
+$('#product_show').append("<%= escape_javascript (render: 'show', locals: { product: @product }) %>");
+$('#product_content').val('')
+$("#checking").hover(function(){
+    $("p").hide(1000);
+});
+
+
+$("#run").on("click", function(){
+    alert("This div was clicked.");
+});
+
+*/
+
+$(document).ready(function(){$("body").append("<p>Appended Paragraph</p>");});
+
+
+$("#try").click(function(){
+    alert("This button was clicked from Click.");
+});
+
+$(document).ready(function(){$("#try").on("click", function(){
+    alert("This button was clicked from ON.");
+});});
+
+$(document).on("click", "#try", function(){
+    alert("This button was clicked from ON.");
+});
+
+
+$(document).ready(function(){$("#mydiv").append("<button id='try'>My Button</button>");});
+
+
+$("#try").click(function(){
+    alert("This button was clicked from Click.");
+});
