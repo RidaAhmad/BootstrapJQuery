@@ -62,3 +62,13 @@ $(document).ready(function(){$("#mydiv").append("<button id='try'>My Button</but
 $("#try").click(function(){
     alert("This button was clicked from Click.");
 });
+
+$("#trying").on "click", ->
+	$.ajax
+		url: '/products'
+		data: product {}
+		dataType: "html"
+		error: (jqXHR, textStatus, errorThrown) ->
+			$('body').append "AJAX Error: #{textStatus}"
+		success: (data, textStatus, jqXHR) ->
+			$('body').append "Successful AJAX call: #{data}"

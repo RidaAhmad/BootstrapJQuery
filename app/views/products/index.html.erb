@@ -11,7 +11,6 @@
 <% @products.each do |product| %>
   <tr>
     <td><%= product.name %></td>
-    <br/>
     <td><%= link_to 'Show', product, :class => 'btn btn-mini btn-primary' %></td>
     <td><%= link_to 'Edit', edit_product_path(product), :class => 'btn btn-mini btn-warning' %></td>
     <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-mini btn-danger' %></td>
