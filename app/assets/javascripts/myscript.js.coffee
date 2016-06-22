@@ -1,3 +1,4 @@
+console.log("Before AJAX Call!")
 $(document).ready ->
   $("#trying").click ->
     $.ajax
@@ -8,4 +9,6 @@ $(document).ready ->
       error: (jqXHR, textStatus, errorThrown) ->
         $('body').append "AJAX Error: #{textStatus}"
       success: (data, textStatus, jqXHR) ->
+        console.log("Within AJAX Call!")
         $('body').append "Successful AJAX call!"
+console.log("After AJAX Call!")
